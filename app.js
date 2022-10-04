@@ -16,7 +16,7 @@ function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1
     console.log(randomNumber)
 
-    if (randomNumber ===1) {
+    if (randomNumber === 1) {
         computerChoice = 'rock'
     }
 
@@ -48,7 +48,7 @@ function getResult() {
         result = 'You Win!'
     }
     if (computerChoice === 'scissors' && userChoice === "paper") {
-        result = 'Its a Lost!'
+        result = 'You Lost!'
     }
     resultDisplay.innerHTML = result
 }
